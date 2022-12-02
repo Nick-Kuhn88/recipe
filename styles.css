@@ -19,17 +19,38 @@ body {
     
 }
 .nav {
-    /* display: absolute; */
     position: absolute;
-    /* order: 1; */
     top: 0;
     height: 80px;
     width: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0 0 10px 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
 }
 .nav ul li {
     text-decoration: none;
     list-style-type: none;
+}
+.main-nav h2 {
+    display: none;
+}
+.main-nav {
+    display: flex 1 1 auto;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.home {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #EB5428;
+    text-align: center;
+}
+.avatar {
+    grid-column: 3/4;
+    grid-row: 1/2;
 }
 .breakfast, .brunch, .lunch, .dinner,
 .apps, .desserts, .beverages {
@@ -65,30 +86,7 @@ menu a {
 a svg {
     order: -1;
 }
-.nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 0;
-}
-.main-nav h2 {
-    display: none;
-}
-.main-nav {
-    display: flex 1 1 auto;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-.home {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    background-color: #EB5428;
-    text-align: center;
-}
-.avatar {
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
+
 header {
     /* position: absolute; */
     margin-top: 150px;
@@ -153,12 +151,39 @@ dl {
 /*                     Side Dishes                  */
 .side-dishes h2 {
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.rice, .salsa, .guac, .tortilla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding: 10px;
+}
+.side-dishes figure img {
+    grid-column: 1/2;
+    grid-row: 2/4;
 }
 .side-dishes figure {
-    display: inline-flex;
+    display: inline-block;
 }
+.side-dishes figcaption {
+    display: block;
+    padding-left: 10px;
+    font-size: 20px;
+    grid-column: 2/6;
+    grid-row: 2/5;
+}
+.side-dishes h3 {
+    margin: 0;
+    text-align: left;
+    padding-left: 20px;
+    grid-column: 2/6;
+    grid-row: 1/2;
+}
+
 /*                     Typography                   */
-h1, h2, h3 nav a, figcaption, 
+h1, h2, h3, nav a, figcaption, 
 menu li, #social li, footer {
     font-family: 'Bebas Neue', cursive;
 }
@@ -179,16 +204,23 @@ dt {
     background-color: #7ABFBF;
 }
 /*                   Connect                  */
+#social li {
+    font-size: 20px;
+}
 .connect ul {
     text-align: center;
-}
+    margin-top: 30px;
+    width: 100%;
+}   
 .connect li {
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
     /* width: 100%; */
     padding: 5px;
+    justify-content: center;
 }
+
 .connect a {
     text-decoration: none;
     color: #EB5428;
