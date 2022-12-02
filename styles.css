@@ -4,18 +4,21 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Roboto', sans-serif; */
 * {
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
 }
 html {
     background: rgba(122, 191, 191, .5);
+    display: flex;
+    flex-direction: column;
+    column-width: 100%;
 }
 body {
     width: 80%;
     background-color: #F2F2F2;
-    display: flex;
-    flex-direction: column;
+    display: relative;
+    
 }
-.nav {
+html body .nav {
     display: inline-flex;
     order: -1;
     top: 10px;
@@ -37,12 +40,15 @@ h1{
     text-align: center;
     font-size: 40px;
 }
+menu {
+    text-align: center;
+}
 menu li {
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
     /* width: 100%; */
-    padding: 20px;
+    padding: 5px;
 }
 menu a {
     text-decoration: none;
@@ -52,8 +58,8 @@ menu a {
     flex-direction: column;
     text-align: center;
     padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 a svg {
     order: -1;
@@ -91,6 +97,7 @@ header {
     justify-content: center;
     line-height: 1.5em;
 }
+/*              Details                  */
 .details h2 {
     text-align: center;
 }
@@ -108,9 +115,27 @@ dl dt {
 }
 dl {
     text-align: left;
-    position: left;
-    left: 5px;
+    position:relative;
+    margin-left: 5px;
     padding: 10px;
+}
+/*                     Ingredients                  */
+.ingredients h2 {
+    text-align: center;
+}
+.ingredients ul {
+    justify-content: left;
+    padding: 10px 0 10px 30px;
+}
+.ingredients li {
+    list-style: square;
+    padding: 10px;
+    width: 100%;
+    /* margin-right: 100px; */
+}
+/*                     Directions                   */
+.directions h2 {
+    text-align: center;
 }
 /*       Typography       */
 h1, h2, h3 nav a, figcaption, 
@@ -132,6 +157,10 @@ dt {
 }
 .side-dishes {
     background-color: #7ABFBF;
+}
+/*                   Footer                   */
+footer img {
+    width: 100%;
 }
 @media screen and (min-width: 1280px) {
     
