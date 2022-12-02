@@ -32,6 +32,7 @@ body {
 .apps, .desserts, .beverages {
     display: none;
 }
+/*        Header        */
 h1{
     text-align: center;
     font-size: 40px;
@@ -47,7 +48,15 @@ menu a {
     text-decoration: none;
     color: #EB5428;
     font-size: 20px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+a svg {
+    order: -1;
 }
 .main-nav h2 {
     display: none;
@@ -76,10 +85,43 @@ header {
 .description img {
     width: 100%;
 }
+.description p{
+    padding: 10px;
+    text-align: left;
+    justify-content: center;
+    line-height: 1.5em;
+}
+.details h2 {
+    text-align: center;
+}
+dl dd {
+    display: inline;
+    margin: 0;
+}
+dl dd:after {
+    display: block;
+    content: "";
+}
+dl dt {
+    display: inline-block;
+    padding-right: 10px;
+}
+dl {
+    text-align: left;
+    position: left;
+    left: 5px;
+    padding: 10px;
+}
 /*       Typography       */
 h1, h2, h3 nav a, figcaption, 
 menu li, #social li, footer {
     font-family: 'Bebas Neue', cursive;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
 }
 p, dd, li, nav, input {
     font-family: 'Montserrat', sans-serif;
