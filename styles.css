@@ -2,6 +2,26 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Roboto', sans-serif; */
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+html {
+    background: rgba(122, 191, 191, .5);
+}
+body {
+    width: 80%;
+    background-color: #F2F2F2;
+}
+
+
+
+
+
+
+
+
+
 .side-dishes {
     background-color: #7ABFBF;
 }
