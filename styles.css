@@ -155,6 +155,7 @@ dl {
 }
 .directions li {
     padding-left: 5px;
+    padding-bottom: 10px;
 }
 /*                     Side Dishes                  */
 .side-dishes h2 {
@@ -291,7 +292,37 @@ footer img {
         width: 50px;
         height: 50px;
     }
+    header {
+        margin-top: 200px;
+    }
 }
 @media screen and (min-width: 1280px) {
     
+}
+@media print {
+    html {
+        background-color: white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        display: block;
+    }
+    menu {
+        display: none;
+    }
+    .side-dishes img, figcaption, svg {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    header {
+        margin-top: 50px;
+    }
+    .description img {
+        height: 650px;
+        width: auto;
+        margin-left: 5px;
+    }
 }
