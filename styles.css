@@ -299,36 +299,84 @@ footer img {
 @media screen and (min-width: 1280px) {
     
 }
+@media screen {
+    .print-only {
+        display: none;
+    }
+}
 @media print {
     html {
         background-color: white;
         color: black;
-        font-family: Arial, Helvetica, sans-serif;
     }
     body {
+        margin: 0.5in;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         display: block;
+        text-align: left;
+    }
+    h1 {
+        font-size: 28px;
+    } 
+    h2, h3 {
+        font-size: 22px;
     }
     menu {
         display: none;
     }
-    .side-dishes img, figcaption, svg {
+    .side-dishes, svg {
         display: none;
     }
     nav {
         display: none;
     }
     header {
-        margin-top: 50px;
+        margin-top: 0;
+        text-align: left;
     }
-    .description img {
-        height: 650px;
-        width: auto;
-        margin-left: 5px;
+    .details {
+        float: left;
+    }
+    .details, .details h2 {      
+        text-align: left;
+    }
+    .ingredients {
+        float: right;
+    }
+    .ingredients, .ingredients h2 {     
+        text-align: left;
+    }
+    .ingredients li {
+        padding: 0;
+    }
+    .directions {
+        clear: both;
+    }
+    .directions, .directions h2 {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .directions li {
+        padding: 0;
+    }
+    .connect {
+        clear: both;
     }
     img {
-        filter: grayscale(100%);
+        display:none;
+    }
+    .description p {
+        display: none;
+    }
+    footer {
+        display: none;
     }
     .connect a {
         color: black;
+        display: block;
+        text-align: left;
+        padding: 0;
+        font-size: 14px;
+        margin-top: 0;
     } 
 }
