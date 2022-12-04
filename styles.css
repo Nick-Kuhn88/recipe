@@ -325,4 +325,10 @@ footer img {
         width: auto;
         margin-left: 5px;
     }
+    img {
+        filter: grayscale(100%);
+    }
+    .connect a {
+        color: black;
+    } 
 }
