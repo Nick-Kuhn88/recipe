@@ -380,7 +380,6 @@ footer img {
     }
     .connect {
         margin-top: 0;
-        display: flex 1 2 auto;
     }
     .bottom {
         display: inline-flex;
@@ -453,8 +452,7 @@ footer img {
         padding: 10px;
     }
     .description {
-        display: flex 2 2 auto;
-        flex-direction: column;
+        display: inline-block;
         grid-column: 2/9;
     }
     .description img {
