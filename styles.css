@@ -16,10 +16,8 @@ html {
 body {
     width: 80%;
     background-color: #F2F2F2;
-    
-    
 }
-.nav {
+body .nav {
     position: absolute;
     top: 0;
     width: 80%;
@@ -109,6 +107,15 @@ menu a {
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    transition: all .5s ease-in-out;
+}
+menu a:hover {
+    background-color: #EB5428;
+    color: #F2F2F2;
+    border-radius: 20%;
+}
+menu svg:hover {
+    stroke: #F2F2F2;
 }
 a svg {
     order: -1;
@@ -192,6 +199,9 @@ dl {
     grid-column: 1/2;
     grid-row: 2/4;
 }
+.side-dishes img:hover {
+    transform: scale(1.2, 1.2);
+}
 .side-dishes figure {
     display: inline-block;
 }
@@ -251,7 +261,9 @@ dt {
     padding: 5px;
     justify-content: center;
 }
-
+.connect li:hover {
+    transform: scale(1.5, 1.5);
+}
 .connect a {
     text-decoration: none;
     color: #EB5428;
@@ -277,10 +289,16 @@ footer img {
     margin-top: 10px;
 }
 @media screen and (min-width: 768px) {
+    .main-nav {
+        display: none;
+    }
     .home {
         position: absolute;
+        display: inline;
         left: 0;
+        right:auto;
         top: 0;
+        width: 75px;
     }
     .avatar {
         position: absolute;
@@ -291,13 +309,15 @@ footer img {
     .search-bar {
         position: absolute;
         right: 50px;
+        left: auto;
         top: 0;
         margin: 10px;
+        width: 247px;
     }
     .food-icons {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        margin-top: 50px;
+        margin-top: 80px;
     }
     .food-icons {
         border-bottom: 3px solid rgba(11, 21, 18, 0.4);
@@ -314,6 +334,9 @@ footer img {
         background-color: #EB5428;
         border-radius: 15%;
         color: #F2F2F2;
+    }
+    .nav svg:hover {
+        stroke: #F2F2F2;
     }
     a img {
         order: -1;
@@ -376,9 +399,10 @@ footer img {
     .search-bar {
         position: absolute;
         top: 100px;
-        align-items: center;
+        /* align-items: center;
         margin-right: 35%;
-        margin-left: 35%;
+        margin-left: 35%; */
+        text-align: center;
     }
     nav {
         position: absolute;
@@ -411,8 +435,8 @@ footer img {
     }
     h1 {
         text-align: center;
-        margin-left: 35%;
-        margin-right: 35%;
+        /* margin-left: 35%;
+        margin-right: 35%; */
     }
     .details {
         background-color: #0D0D0D;
@@ -475,9 +499,12 @@ footer img {
     }
     h1 {
         font-size: 28px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-bottom: 0.5in;
     } 
     h2, h3 {
         font-size: 22px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     menu {
         display: none;
@@ -495,20 +522,27 @@ footer img {
     .details {
         float: left;
     }
+    .details dl dd,dt {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
     .details, .details h2 {      
         text-align: left;
     }
     .ingredients {
         float: right;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     .ingredients, .ingredients h2 {     
         text-align: left;
     }
     .ingredients li {
         padding: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     .directions {
         clear: both;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 0.5in;
     }
     .directions, .directions h2 {
         text-align: left;
@@ -516,9 +550,11 @@ footer img {
     }
     .directions li {
         padding: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     .connect {
         clear: both;
+        margin-top: 0.5in;
     }
     img {
         display:none;
@@ -537,4 +573,7 @@ footer img {
         font-size: 14px;
         margin-top: 0;
     } 
+    .connect p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 }
