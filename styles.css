@@ -397,6 +397,9 @@ footer img {
     
 }
 @media screen and (min-width: 1280px) {
+    body {
+        max-width: 1500px;
+    }
     .main-nav {
         display: none;
     }
@@ -458,6 +461,7 @@ footer img {
     .description {
         display: inline-block;
         grid-column: 2/9;
+        max-width: 1020px;
     }
     .description img {
         object-fit:scale-down;
