@@ -47,6 +47,10 @@ body .nav {
     left: 20%;
     right: 20%;
     width: 50%;
+    transition: all .5s ease-in-out;
+}
+.home:hover {
+    background-color: #7ABFBF;
 }
 .avatar {
     position: absolute;
